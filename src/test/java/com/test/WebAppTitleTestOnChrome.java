@@ -19,7 +19,7 @@ import java.util.List;
 public class WebAppTitleTestOnChrome {
 
 	public static RemoteWebDriver driver;
-	public static String appURL = "http://localhost:8080/WebApp-1.0.0-SNAPSHOT/sample.html";
+	public static String appURL = "http://34.227.108.252:8080/WebApp-1.0.0-SNAPSHOT/sample.html";
 	
 	@BeforeClass
 	@Parameters({ "browser" })
