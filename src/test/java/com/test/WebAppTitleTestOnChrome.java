@@ -19,7 +19,7 @@ import java.util.List;
 public class WebAppTitleTestOnChrome {
 
 	public static RemoteWebDriver driver;
-	public static String appURL = "http://34.227.108.252:8080/WebApp-1.0.0-SNAPSHOT/sample.html";
+	public static String appURL = "http://34.227.108.252:8080/WebApp-1.0.0-SNAPSHOT/training.html";
 	
 	@BeforeClass
 	@Parameters({ "browser" })
@@ -31,12 +31,13 @@ public class WebAppTitleTestOnChrome {
 	
 	@Test
 	public void testGooglePageTitleInChrome() throws Exception{
-		driver.navigate().to("http://34.227.108.252:8080/WebApp-1.0.0-SNAPSHOT/sample.html");
+		driver.navigate().to("http://34.227.108.252:8080/WebApp-1.0.0-SNAPSHOT/training.html");
 		System.out.println("*********Testing inprogress On Chrome**********");
-		String strPageTitle = driver.getTitle();
-		System.out.println("Actual sample html page title is: "+strPageTitle);
+		String actualTitle = driver.getTitle();
+		String expectedValue = "DevOps Training"; //Clients requirement
+		System.out.println("Actual sample html page title is: "+actualTitle);
 		this.takeSnapShot(driver, "WebAppsample-Chrome.png") ;
-		Assert.assertTrue(strPageTitle.equalsIgnoreCase("SampleWebPage"), "Page title doesn't match");
+		Assert.assertTrue(actualTitle.equalsIgnoreCase(expectedValue), "Page title doesn't match");
 		
 		List <WebElement> list = driver.findElements(By.tagName("h1"));
 		System.out.println("Number of links: "+list.size());
