@@ -7,13 +7,13 @@
 			<class name="com.test.WebAppTitleTestOnChrome"/>
 		</classes>
 	</test>
-	<!--
 	<test name="Grid IE Test">
 		<parameter name="browser" value="IE"/>
 		<classes>
 			<class name="com.test.WebAppTitleTestOnIE"/>
 		</classes>
 	</test>
+	<!--
 	<test name="Grid firefox Test">
 		<parameter name="browser" value="firefox"/>
 		<classes>
