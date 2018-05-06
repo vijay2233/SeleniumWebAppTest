@@ -36,7 +36,7 @@ public class WebAppTitleTestOnChrome {
 		String strPageTitle = driver.getTitle();
 		System.out.println("Actual sample html page title is: "+strPageTitle);
 		this.takeSnapShot(driver, "WebAppsample-Chrome.png") ;
-		Assert.assertTrue(strPageTitle.equalsIgnoreCase("SamplePage"), "Page title doesn't match");
+		Assert.assertTrue(strPageTitle.equalsIgnoreCase("SampleWebPage"), "Page title doesn't match");
 		
 		List <WebElement> list = driver.findElements(By.tagName("h1"));
 		System.out.println("Number of links: "+list.size());
