@@ -35,7 +35,8 @@ public class WebAppTitleTestOnChrome {
 		System.out.println("*********Testing inprogress On Chrome**********");
 		String actualTitle = driver.getTitle();
 		String expectedValue = "DevOps Training"; //Clients requirement
-		System.out.println("Actual sample html page title is: "+actualTitle);
+		System.out.println("Actual training html page title is: "+actualTitle);
+		System.out.println("Expected training html page title is: "+expectedValue);
 		this.takeSnapShot(driver, "WebAppsample-Chrome.png") ;
 		Assert.assertTrue(actualTitle.equalsIgnoreCase(expectedValue), "Page title doesn't match");
 		
