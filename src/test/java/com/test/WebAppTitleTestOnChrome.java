@@ -50,7 +50,7 @@ public class WebAppTitleTestOnChrome {
 	public void tearDown() {
 		if(driver!=null) {
 			System.out.println("Closing the Chrome browser");
-			driver.quit();
+			//driver.quit();
 		}
 	}
 	public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
