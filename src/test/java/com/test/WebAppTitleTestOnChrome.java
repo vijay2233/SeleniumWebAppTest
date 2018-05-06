@@ -31,7 +31,7 @@ public class WebAppTitleTestOnChrome {
 	
 	@Test
 	public void testGooglePageTitleInChrome() throws Exception{
-		driver.navigate().to("http://localhost:8080/WebApp-1.0.0-SNAPSHOT/sample.html");
+		driver.navigate().to("appURL");
 		System.out.println("*********Testing inprogress On Chrome**********");
 		String strPageTitle = driver.getTitle();
 		System.out.println("Actual sample html page title is: "+strPageTitle);
