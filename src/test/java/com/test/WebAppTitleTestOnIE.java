@@ -31,7 +31,7 @@ public class WebAppTitleTestOnIE {
 	
 	@Test
 	public void testGooglePageTitleInIE() throws Exception{
-		driver.navigate().to("http://localhost:8080/WebApp-1.0.0-SNAPSHOT/sample.html");
+		driver.navigate().to("http://localhost:8090/WebApp-1.0.0-SNAPSHOT/sample.html");
 		System.out.println("*********Testing inprogress on IE**********");
 		String strPageTitle = driver.getTitle();
 		System.out.println("Actual sample html page title is: "+strPageTitle);
